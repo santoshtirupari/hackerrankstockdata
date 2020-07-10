@@ -1,4 +1,3 @@
-
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -8,6 +7,7 @@ import { StockData } from './stockData/stockData.component';
 //Angular Router Module
 import { RouterModule, Router } from '@angular/router';
 import {RouterTestingModule} from '@angular/router/testing';
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -19,6 +19,7 @@ import {RouterTestingModule} from '@angular/router/testing';
     BrowserModule,
     FormsModule,
     RouterTestingModule,
+    HttpClientModule,
     RouterModule.forRoot([
       { path:'', component: StockData }
     ])
